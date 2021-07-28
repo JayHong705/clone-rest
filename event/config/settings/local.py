@@ -1,6 +1,7 @@
+from .base import *
 
 DEBUG = True
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0'] + ['192.168.0.' + str(ip) for ip in range(256)]
 CORS_ORIGIN_ALLOW_ALL = True
 
