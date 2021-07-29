@@ -25,7 +25,8 @@ COMMON_APPS = [
 ]
 
 PROJECT_APPS = [
-    'event'
+    'event',
+    'account'
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + COMMON_APPS + PROJECT_APPS
@@ -64,6 +65,9 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'config.wsgi.application'
+
+# Custom user model
+AUTH_USER_MODEL = 'account.User'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
