@@ -25,7 +25,7 @@ COMMON_APPS = [
 ]
 
 PROJECT_APPS = [
-    'event',
+    'app',
     'account'
 ]
 
