@@ -25,8 +25,8 @@ COMMON_APPS = [
 ]
 
 PROJECT_APPS = [
-    'app',
-    'account'
+    'api.account',
+    'api.event'
 ]
 
 INSTALLED_APPS = DEFAULT_APPS + COMMON_APPS + PROJECT_APPS

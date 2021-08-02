@@ -1,7 +1,7 @@
 from django.contrib.auth.models import BaseUserManager
 from django.utils.crypto import get_random_string
 
-from querysets import UserQuerySet, ProfileQuerySet
+from .querysets import UserQuerySet, ProfileQuerySet
 
 
 class UserDefaultManager(BaseUserManager.from_queryset(UserQuerySet)):

@@ -5,6 +5,7 @@ from app.rest_utils.mixins import CustomResponseMixin
 
 from .models import Profile
 
+
 class ProfileAPIViewSet(CustomResponseMixin, viewsets.GenericViewSet):
     """
 
