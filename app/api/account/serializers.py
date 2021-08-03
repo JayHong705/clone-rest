@@ -24,7 +24,7 @@ class ProfileSerializer(serializers.ModelSerializer):
         model = Profile
         fields = [
             'name',
-            'devicetoken'
+            'device_token'
         ]
 
 
