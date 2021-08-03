@@ -9,7 +9,7 @@ class CustomResponseMixin(object):
     """
     def response(self, status_code, data=None):
         response_data = {
-            data: {} if data is None else data
+            'data': {} if data is None else data
         }
 
         return Response(status=status_code, data=response_data)
