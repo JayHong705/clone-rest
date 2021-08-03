@@ -1,7 +1,6 @@
 from rest_framework import viewsets, status
-
-from app.api.account.serializers import ProfileSerializer
-from app.rest_utils.mixins import CustomResponseMixin
+from api.account.serializers import ProfileSerializer
+from utils.mixins import CustomResponseMixin
 
 from .models import Profile
 
