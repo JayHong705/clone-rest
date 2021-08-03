@@ -46,7 +46,7 @@ REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
 
-ROOT_URLCONF = 'config.urls'
+ROOT_URLCONF = 'config.urls.urls'
 
 TEMPLATES = [
     {
