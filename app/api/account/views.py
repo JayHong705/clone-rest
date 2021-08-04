@@ -19,3 +19,11 @@ class ProfileAPIViewSet(CustomResponseMixin, viewsets.GenericViewSet):
             status_code=status.HTTP_200_OK,
             data=self.get_serializer(self.queryset, many=True).data
         )
+
+    def retrieve(self, request, pk):
+        profile = Profile.objects.get(id=pk)
+
+        return self.response(
+            status_code=status.HTTP_200_OK,
+            data=self.get_serializer(profile).data
+        )
